@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/atas"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/dah"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="1243dp"
+            android:layout_height="wrap_content"
+            android:text="Rabu, 18 Nov 2020"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="#ffa726"
+            android:textStyle="italic"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Egi Kurniawan 43A87006170206"
+            android:layout_below="@id/textName"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#fed"
+            android:layout_marginTop="2dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/label1"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/background"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="160dp">
+        <TextView
+            android:id="@+id/labelPhoto"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Hight Priority"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelPhoto"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:text="3 Task"
+            android:textAlignment="center"
+            android:textColor="#e53935"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/labelFollowers"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Active Task"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="12 Task"
+            android:textColor="#00695c"
+            android:textStyle="bold"
+            android:layout_below="@+id/labelFollowers"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/pending"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/labelPhoto"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="45dp"
+            android:gravity="center_horizontal"
+            android:text="Pending Priority"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pending"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="63dp"
+            android:gravity="center_horizontal"
+            android:text="5 Task"
+            android:textAlignment="center"
+            android:textColor="#ffa726"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/background"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/label1">
+
+
+        <TextView
+            android:id="@+id/newtask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="New Tasks"
+            android:textColor="#00695c"/>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/const1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/newtask"
+
+            >
+
+            <ImageView
+                android:id="@+id/flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_assistant_photo_red_24"
+                android:layout_marginStart="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/algoritma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="Print Tugas Algoritma"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/flag"
+                app:layout_constraintStart_toEndOf="@+id/flag"
+                app:layout_constraintTop_toTopOf="@+id/flag" />
+
+            <TextView
+                android:id="@+id/tue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tue, 11 Nov"
+                android:textSize="15sp"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/algoritma"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/algoritma"
+                app:layout_constraintTop_toTopOf="@+id/algoritma"
+                android:layout_marginRight="20dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/const2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@id/const1"
+
+            >
+
+            <ImageView
+                android:id="@+id/flagyellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_baseline_assistant_photo_ijo_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/seminar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="Rapat Panitia Seminar"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/flagyellow"
+                app:layout_constraintStart_toEndOf="@+id/flagyellow"
+                app:layout_constraintTop_toTopOf="@+id/flagyellow" />
+
+            <TextView
+                android:id="@+id/friday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:text="Fri, 15 Nov"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/seminar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/seminar"
+                app:layout_constraintTop_toTopOf="@+id/seminar" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@id/const2"
+
+            >
+
+            <ImageView
+                android:id="@+id/flaggreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_assistant_photo_orange_24"
+                android:layout_marginStart="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/kalkulus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="Kerjakan tugas kalkulus"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/flaggreen"
+                app:layout_constraintStart_toEndOf="@+id/flaggreen"
+                app:layout_constraintTop_toTopOf="@+id/flaggreen" />
+
+            <TextView
+                android:id="@+id/wedesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:text="Wed, 12 Nov"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/kalkulus"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/kalkulus"
+                app:layout_constraintTop_toTopOf="@+id/kalkulus" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/label1"
+        android:src="@drawable/ic_baseline_add_circle_24" />
+
+</RelativeLayout>
+
